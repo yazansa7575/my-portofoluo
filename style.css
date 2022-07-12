@@ -1,0 +1,522 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(image/backgraond.jpg);
+    user-select: none;
+
+}
+a{
+    cursor: pointer;
+}
+.black_luyot{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.6;
+    position: fixed;
+    z-index: -999;
+}
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 20px 100px 10px 100px;
+    z-index: 999;
+    transition: ease-in-out 0.5s;
+
+}
+.logo{
+    font-size: 44px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-right: 280px;
+    transition: 0.6s ease;
+
+}
+.logo:hover{
+    color:rgb(25, 210, 158); ;
+}
+nav {
+    display: flex;
+    align-items: center;    
+    width: 50%;
+    text-align: center;
+
+}
+
+nav a {
+    padding:10px 10px ;
+    margin: 0px 1px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 100px;
+    transition:ease 0.8s;
+    color: white;
+
+}
+nav a:hover{
+
+    background-color: rgb(25, 210, 158);
+    border-bottom: solid rgb(255, 255, 255) 2px;   
+    border-radius:10px ; 
+
+}
+.main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+
+
+}
+.titel-main{
+    width: 60%;
+    text-align: center;
+    position: relative;
+    
+
+}
+.titel-main h1,p {
+    color: white;
+    transition: ease 0.5s transform;
+    
+}
+.titel-main h1:hover ,.titel-main p:hover{
+    transform: scale(1.07);
+
+}
+.name{
+    font-size: 60px;
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+
+}
+.name span{
+    color: rgb(25, 210, 158);
+    
+}
+.jop{
+    font-size: 30px;
+    position: absolute;
+    left: 80px;
+    font-weight: 600;
+}
+.q{
+    color: rgb(25, 210, 158);
+
+}
+.logos{
+    position: absolute;
+    
+}
+.logo_socil{
+    position: relative;
+    top:50px;
+    left: 170px;
+}
+.logo_socil img {
+    width: 35px;
+    margin: 7px 10px;
+    border-radius: 2%;
+    transition: ease 0.2s transform;
+    
+}
+.logo_socil img:hover{
+    transform: scale(1.2);
+}
+.btn-daownlaod{
+    position: absolute;
+    bottom: -170px;
+    left: 160px;
+}
+.btn{
+    font-size: 25px;
+    background-color:rgb(13, 146, 109); 
+    border-radius: 50px;
+    outline: none;
+    padding: 10px;
+  
+
+}
+.btn:hover{
+    background-color:rgb(42, 168, 132); 
+
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+
+.my-photo{
+    width: 40%;
+
+} 
+.my-photo img {
+    width: 60%;
+    background-color:transparent;
+    border-radius: 7%;
+    transition: ease 0.5s;
+    position: relative;
+    top: 16px;
+    left: 50px;
+   
+}
+.my-photo img:hover {
+    background-color: rgba(25, 210, 157, 0.6);
+    transform: scale(1.01);
+}
+
+.sec1{
+    margin-top: 70px;
+    transition: ease-out 0.3s ;
+    background-image: url(image/Capture.PNG);
+    border-radius: 10px 1000px 1000px 10px ;
+    background-repeat: no-repeat;
+    margin-bottom: 1%;
+    background-color: red;
+}
+.titel-part{
+display: flex;
+width: 80%;
+margin: 0% 10%;
+padding-bottom: 40px;
+justify-content:center;
+align-items: center;
+}
+.titel_sec {
+    width: 40%;
+    color: #82ffdc;
+    text-transform:capitalize;
+    height: 300px; 
+    font-size: 27px;
+    display: flex;
+    padding-top: 100px;
+
+}
+.titel_sec h1{
+    transition: ease-out 0.3s ;
+
+}
+.sec:hover .titel_sec h1{
+    transform:translateX(-70px);
+    font-size: 60px;
+}
+.info{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 40%;
+    display: flex;
+    padding: 20px;
+    border-radius: 50px;
+    transition: ease-out 0.3s ;
+    margin-top: 25px;
+
+}
+.info:hover{
+    transform: scale(1.1);
+
+
+}
+
+.info p{
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-size: 22px;
+    color: #82ffdc;
+    text-transform:capitalize;
+    transition: ease-out 0.3s ;
+    line-height:35px ;
+}
+.sec2{
+    background-image: url(image/Capture2.PNG);
+    background-repeat: no-repeat;
+    margin: 0px;
+    border-radius: 10px 1000px 1000px 10px ;
+
+
+}
+.bar{
+    width: 350px;
+    margin-top: 20px;
+
+}.bar input{
+    display: block;
+    width: 340px;
+
+}
+.margin_ri{
+    display: flex;
+    justify-content: space-between;
+}
+
+#slider{
+    -webkit-appearance: none;
+    outline: none;  
+    border-radius: 4px;
+    background-color: #47d4ac;
+}
+.bars span{
+    font-size: 20px;    
+    color: white;
+    font-weight: 700;
+} 
+.sec3 , .sec4{
+    margin: 6% 10%;
+    width: 80%;
+    text-align: center;
+}
+.titel-sec-m{
+    font-size: 50px ;
+    color: #82ffdc;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.card{
+    margin-top: 30px;
+    margin-top: 30px;
+    border-radius: 3%;
+    position: relative;
+    width: 300px;
+    height: 399px;
+    background-color: rgba(92, 89, 89, 0.6);
+    transition: ease-in-out 0.1s  ;
+
+}  
+.card:hover{
+    transform: scale(1.02);
+} 
+.img-card{
+    width: 240px;
+    margin: 0px 30px;
+    background-color: rgba(68, 157, 213, 0.6);
+    border-radius: 3%;
+
+} 
+.img-card img{
+    width: 100%;
+
+}
+.card h1 {
+    font-size:27px ;
+    color: white;
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+.card p{
+    font-size:19px ;
+    color:rgb(130, 255, 220) ;
+    margin-bottom: 20px;
+}
+.op-black{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition: ease-in-out 0.1s  ;
+
+}
+.card:hover .op-black{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card a {
+    background-color: #47d4ac;
+    text-decoration: none;
+    color:black;
+    border-radius: 2px;
+    font-weight: 600;
+    padding: 10px;
+    
+}
+.card3 h1{
+    font-size: 23px;
+}
+.get-in-touch{
+    color:white;
+    font-size: 20px;
+    display: block;
+    margin-top:10px ;
+    font-weight: 600;
+    text-transform:capitalize;
+
+}
+.content_conact{
+  
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-image: url(image/Capture2.PNG);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+
+}
+.conactWm{
+    width: 30%;
+    text-align: left;
+    padding: 2%;
+    padding-left: 2%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+
+}
+.icon img[src="/image/user.png"]{
+    margin-bottom: 33px;
+    margin-right: 7px;
+}
+.icon img[src="/image/home-icon-silhouette.png"]{
+    margin-bottom: 33px;
+    margin-right: 7px;
+
+}
+.conactWm h4{
+    margin-bottom: 3px;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.conactWm span{
+    display: block;
+    margin-bottom: 13px;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+.SendMessage{
+    width: 70%;
+    padding: 2%;
+
+
+}
+.SendMessage h3{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.SendMessage input{
+    width: 90%;
+    height: 36px;
+    margin-bottom:7px ;
+    border-radius: 50px 10px 10px 50px;
+    border:none ;
+    outline: none;
+    padding:9px;
+    color: #064432;
+
+
+}
+.SendMessage input:focus{
+    outline: #159370 solid 4px ;
+}
+.SendMessage input::placeholder{
+    color: black;
+}
+.btn-send{
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: #82ffdc;
+    font-weight: 300;
+
+}
+
+   
+}
+
+.btn-send:hover{
+    background-color: #50f8c8;
+
+}
+.thxShow{
+    visibility: visible ;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(/image/Capture2.PNG);
+   width: 700px;
+    height: 400px;
+    border-radius: 17px;
+    display: inline-block;
+    animation: fadef 0.5s  ;
+}
+@keyframes fadef {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+.thx{
+    position: fixed;
+    width: 700px;
+    height: 400px;
+    border-radius: 17px;
+    visibility: hidden;
+    
+}
+
+
+.contener-thx{
+    text-align: center; 
+}
+.contener-thx .close{
+    width: 27px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.contener-thx .smail{
+    width: 50px;
+    
+}
+.contener-thx h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 25%;
+    text-transform: capitalize;
+
+}
+::-webkit-scrollbar{
+    width: 13px;
+
+}
+::-webkit-scrollbar-track{
+    background-color:#064432;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#47d4ac;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:#63efc8;
+}
